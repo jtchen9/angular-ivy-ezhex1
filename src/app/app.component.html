@@ -1,0 +1,21 @@
+<div class="flex flex-row">
+  <p-button
+    (click)="randomLayout()"
+    [label]="label"
+    icon="pi pi-check"
+    styleClass="mt-2 w-8rem"
+  ></p-button>
+  <div class="w-2 h-4rem ml-7 p-2">
+    <h5 class="mb-2 mt-0">Gravity: {{ val1 }}</h5>
+    <p-slider [(ngModel)]="val1" (onChange)="sliderChange()"></p-slider>
+  </div>
+  <div class="w-2 h-4rem ml-3 p-2">
+    <h5 class="mb-2 mt-0">Elasticity: {{ val2 }}</h5>
+    <p-slider [(ngModel)]="val2" (onChange)="sliderChange()"></p-slider>
+  </div>
+  <div class="w-2 h-4rem ml-3 p-2">
+    <h5 class="mb-2 mt-0">Temp: {{ val3 }}</h5>
+    <p-slider [(ngModel)]="val3" (onChange)="sliderChange()"></p-slider>
+  </div>
+</div>
+<div id="cy"></div>
